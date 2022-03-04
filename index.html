@@ -1,1 +1,244 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portofolio.css">
+    <script src="js/angular.js"></script>
+    <script src="https://kit.fontawesome.com/5554def1de.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <title>Portofolio</title>
+</head>
+
+<body ng-app="app" ng-controller="appctr">
+    <div id="bgimg_intro">
+        <div>
+            <div>
+                <h2 style="height: 30px; font-size: 50px; font-style: italic;" id="sutitling"></h2>
+            </div>
+            <div class="animation_move">
+               <p>
+               </p>
+            </div>
+        </div>
+    </div>
+   
+    <header id="biography">
+        <nav id="nav_icon">
+            <div>
+                <img id="nav_icon_img" src="./image/iconimg_bio.jpg" alt="Navigation Icon">
+            </div>
+            <div id="nav_icon_drop">
+                <ul>
+                    <li><a href="#BIO">BIO</a></li>
+                    <li><a href="#firstSection">Skills</a></li>
+                    <li><a href="#secondSection">Project</a></li>
+                    <li><a href="#thirdSection">Education</a></li>
+                    <li style="width: 50px;height: auto;" id="nav_icon_drop_list_resume"><span style="color: white;">Resume</span><br> <span style="display: none;" id="popups"><a href="./YUYA KAWAMOTO_TAMWOOD_WEB DEV (4).pdf" target="_blank">download</a></span></li>
+                </ul>
+            </div>
+        </nav>
+       
+        <div id="BIO">
+            <h1 class="titles">About me</h1>
+            <div>
+                <div>
+                    <img src="./image/bgimg_intro.jpg" alt="Selfie">  
+                </div>
+                <div>
+                    <div class="bio">
+                        <p>I am Japanese living in vancouver.
+                            A junior web developer looking for a growth opportunity.
+                            I would like to be challenged since I'm fast learner, trustworthy, loyal persistant.
+                            I am familiar with HTML5, CSS3, Sass, JS, AngularJS, React for front-end, PHP, MySQL for back-end.
+                        </p>
+                        <button><a href="./YUYA KAWAMOTO_TAMWOOD_WEB DEV (4).pdf" target="_blank">Resume</a></button>    
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+            <div class="firstSection" id="firstSection">
+                <div>
+                    <h1 id="firstSectionH1" class="titles">Skills</h1> 
+                </div>
+                <div>
+                    <div class="firstSectionElements">
+                        <h2>HTML5</h2>
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="firstSectionElements">
+                        <h2>CSS3</h2>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="firstSectionElements">
+                        <h2>Sass</h2>
+                        <i class="fab fa-sass"></i>
+                    </div>
+                    <div class="firstSectionElements">
+                        <h2>Bootstrap</h2>
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <div class="firstSectionElements">
+                        <h2>JavaScript</h2>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="firstSectionElements">
+                        <h2>Angular JS</h2>
+                        <i class="fab fa-angular"></i>
+                    </div>
+                    <div class="firstSectionElements">
+                        <h2>PHP</h2>
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div class="firstSectionElements">
+                        <h2>WordPress</h2>
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="secondSection" id="secondSection">
+                <div>
+                    <h1 id="secondSectionH1" class="titles">Project</h1>
+                </div>  
+                <div>
+                    <div>
+                        <div class="secondSectionElements" id="dash">
+                            <img src="./project/dash1.png"  alt="Dashboard" class="project_img" id="img_dash">
+                        </div>
+                        <div class="secondSectionElements" id="bakery">
+                            <img src="./project/bakery1.png" alt="Bakery"  class="project_img" id="img_bakery">
+                        </div>
+                        <div class="secondSectionElements" id="login">
+                            <img src="./project/register.png" alt="Login" class="project_img" id="img_login">
+                        </div>
+                    </div>
+                    <div  id="project_model" class="close_project">
+                        <span id="hide_model">	&#967;</span>
+                        <div id="projects" class="close_project">
+                            <div id="projects_img" class="close_project">
+                                <img src="./project/dash1.png" alt="Dashboard" class="project_dashboard close_project">
+                                <img src="./project/dash_night.png" alt="Dashboard" class="project_dashboard close_project">
+                                <img src="./project/bakery1.png" alt="Bakery" class="project_bakery close_project">
+                                <img src="./project/bakery2.png" alt="Bakery" class="project_bakery close_project">
+                                <img src="./project/bakery3.png" alt="Bakery" class="project_bakery close_project">
+                                <img src="./project/register.png" alt="Register" class="project_register close_project">
+                                <img src="./project/login.png" alt="Login" class="project_register close_project">
+                            </div>
+                            <div id="projects_content" class="close_project">
+                                <h2 class="project_dashboard close_project">Dashboard</h2>
+                                <p class="project_dashboard close_project">
+                                    ★ PHP, MySQL, JQuery, Bootstrap5, Sass, HTML<br><br>
+                                    ・A dynamic dashboard for educational facilities 
+                                         with 3 levels of users.Designed by HTML, Sass, 
+                                         Bootstrap5 for dashboard and content pages, 
+                                         and also, JQuery improves functionalities for 
+                                         front-end development.For back-end 
+                                         development, PHP manages content pages and 
+                                         store users’ information to the database with 
+                                         Hash and salt techniques for confidential 
+                                         information like a password.
+                                </p>
+                                <p class="project_dashboard close_project">
+                                    <br>
+                                    ・Allows the Administrator to edit/register student 
+                                    users and teacher users, create new courses 
+                                    and assign specific teacher users to courses 
+                                    and set a maximum and minimum students for 
+                                    each course. Teachers are able to enter 
+                                    students’ marks and comments for the class. 
+                                    Student users can see their marks and 
+                                    comment from teachers and enroll another 
+                                    class through the dashboard.
+                                </p><br>
+                                <p class="project_dashboard close_project"><a href="https://github.com/YuyaC2021/dashboard_for_educational.git" target="_blank" style="color: rgb(195, 195, 241);" class="close_project">Github</a></p>
+                                <h2 class="project_bakery close_project">Shopping List</h2>
+                                <p class="project_bakery close_project">★AngularJS, JavaScript, PHP, MySQL, Sass, HTML <br><br>
+                                    ・An interactive and dynamic landing page for a 
+                                         bakery shop. Designed by HTML, Sass, and 
+                                         AngularJS by considering the OOP principles 
+                                         for front-end development. Angular JS provides
+                                         functions to calculate simultaneously. For 
+                                         back-end development, PHP and MySQL is 
+                                         used to store customers’ information and orders 
+                                         they make to the database.
+                                </p>
+                                <p class="project_bakery close_project">
+                                    <br>
+                                    ・Offers service to order bakeries on the online 
+                                    website to users. Allows users to choose bakery 
+                                    products, check inside a shopping cart and see 
+                                    prices and quantities for each product and 
+                                    overall. Updates information on a shopping cart
+                                    to the latest. 
+                                </p><br>
+                                <p class="project_bakery close_project"><a href="https://github.com/YuyaC2021/landing_bakry.git" target="_blank" style="color: rgb(195, 195, 241);" class="close_project">Github</a></p>
+                                <h2 class="project_register close_project">SECURE REGISTRATION & LOGIN FORM </h2>
+                                <p class="project_register close_project">★ PHP, MySQL, JavaScript, HTML, Sass, Security 
+                                    principles, Cookie
+                                    <br><br>
+                               ・Secure online forms for registration and login 
+                                    created by HTML, Sass for design, JavaScript 
+                                    to route pages between login form and 
+                                    registration form, Cookie to store the username 
+                                    in a Browser. PHP connects to the database  to 
+                                    store username and password.
+                                </p>   
+                                <p class="project_register close_project">
+                                    <br>・Allows users to store passwords with Hash and
+                                    Salting techniques to enhance data security and 
+                                    confidentiality from malicious users and store
+                                    username in browser-side to improve
+                                    user-friendliness depends on they clicked on
+                                    checkbox.
+                                </p><br>
+                                <p class="project_register close_project"><a href="https://github.com/YuyaC2021/login-register_form.git" target="_blank" style="color: rgb(195, 195, 241);" class="close_project">Github</a></p>           
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           
+            </div>
+            <div class="thirdSection" id="thirdSection">
+                <div>
+                    <h1 id="thirdSectionH1" class="titles">Education</h1>
+                </div>
+                <div>
+                    <div class="thirdSectionElements">
+                        <h2><i class="fas fa-graduation-cap"></i> <strong>Tamwood International College</strong></h2>
+                        <p>Vancouver,Canada  September,2021-February,2022</p>
+                        <p><strong>Web Development</strong></p>
+                    </div>
+                    <div class="thirdSectionElements">
+                        <h2><i class="fas fa-graduation-cap"></i><strong>Tamwood International College</strong></h2>
+                        <p>Vancouver,Canada  July-August,2021</p>
+                        <p><strong>General English</strong></p>
+                    </div>
+                    <div class="thirdSectionElements">
+                        <h2><i class="fas fa-graduation-cap"></i> <strong>Bukkyo University</strong></h2>
+                        <p>Kyoto,Japan  April,2017-March,2021</p>
+                        <p><strong>B.C in Education</strong></p>
+                    </div>
+                </div>
+            </div>
+       
+    </main>
+    
+    <footer>
+        <div class="sns">
+            <a href="https://www.instagram.com/yuyawebdeveloper/" target="_blank" class="icons"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yuya-kawamoto-webdev" target="_blank" class="icons"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/hebenyouzai1/" target="_blank" class="icons"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100069588699930" target="_blank" class="icons"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        
+    </footer>
+
+    <script src="js/portofolio.js"></script>
+</body>
+</html>
+
