@@ -12,8 +12,12 @@
   font-style: normal;
 }
 
+body {
+  background-color: rgba(240, 244, 255, 0.22);
+}
+
 #bgimg_intro {
-  background-image: url("../image/icon3.jpg");
+  background-image: url("../image/portofolio-back.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -62,7 +66,11 @@
 
 #bgimg_intro > div > div h2 {
   margin-bottom: 10px;
-  color: brown;
+  height: 30px;
+  font-size: 50px;
+  font-style: italic;
+  color: rgba(165, 42, 42, 0.424);
+  text-shadow: 0px 0px 3px black;
 }
 
 #bgimg_intro > div .animation_move {
@@ -208,8 +216,9 @@ nav div:first-child img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.609);
-          box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.609);
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
 }
 
 nav div:last-child {
@@ -246,7 +255,7 @@ header {
 }
 
 header > div {
-  padding: 30px;
+  padding: 30px 0 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,15 +271,14 @@ header > div {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.527);
   width: 100vw;
   min-height: 400px;
 }
 
 header > div > div {
   width: 80%;
-  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.671);
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.671);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.671);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.671);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,8 +292,11 @@ header > div > div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 header > div > div > div:first-child {
@@ -308,9 +319,9 @@ header > div > div > div:first-child {
 }
 
 header > div > div > div:first-child > img {
-  width: 200px;
-  -webkit-box-shadow: 5px 5px 5px black;
-          box-shadow: 5px 5px 5px black;
+  width: 300px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
 }
 
 header > div > div > div:last-child {
@@ -347,6 +358,8 @@ header > div > div > div:last-child > div button {
   border: none;
   outline: none;
   background-color: rgba(165, 42, 42, 0.315);
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 header > div > div > div:last-child > div button a {
@@ -362,6 +375,19 @@ header > div > div > div .bio {
   position: relative;
   top: -300px;
   opacity: 0;
+}
+
+.titles {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.togglingShow {
+  opacity: 0;
+}
+
+.contentsShow {
+  opacity: 1;
 }
 
 main {
@@ -382,7 +408,7 @@ main {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 50px 0 0 0;
+  padding: 0 0 0 0;
 }
 
 main > div {
@@ -403,7 +429,7 @@ main .firstSection {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(114, 165, 247, 0.068);
+  background-color: rgba(206, 217, 255, 0.636);
   padding: 50px;
 }
 
@@ -437,13 +463,17 @@ main .firstSection > div:last-child {
 
 main .firstSection > div:last-child > div {
   background-color: rgba(215, 231, 250, 0.294);
-  width: 180px;
+  min-width: 110px;
+  width: 25%;
   margin: 20px;
   text-align: center;
   position: relative;
   padding: 10px;
   left: -400px;
   opacity: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 main .firstSection > div:last-child > div i {
@@ -453,8 +483,8 @@ main .firstSection > div:last-child > div i {
 }
 
 main .firstSection > div:last-child > div:hover {
-  -webkit-box-shadow: 5px 5px 5px black;
-          box-shadow: 5px 5px 5px black;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
 }
 
 main .secondSection {
@@ -501,12 +531,16 @@ main .secondSection > div:last-child > div:first-child {
 }
 
 main .secondSection > div:last-child > div:first-child > div {
-  width: 250px;
-  height: 250px;
+  width: 40%;
+  min-width: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 20px;
   position: relative;
   opacity: 0;
   cursor: pointer;
+  overflow: hidden;
   background-color: #490d0d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,6 +560,13 @@ main .secondSection > div:last-child > div:first-child > div {
 main .secondSection > div:last-child > div:first-child > div img {
   width: 90%;
   height: 90%;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+main .secondSection > div:last-child > div:first-child > div img:hover {
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
 }
 
 main .secondSection > div:last-child > div:first-child > div::after {
@@ -673,20 +714,31 @@ main .secondSection > div:last-child > div:last-child > div > div:last-child {
   width: 80%;
   min-width: 300px;
   padding: 20px;
+  color: grey;
 }
 
 main .secondSection > div:last-child > div:last-child > div > div:last-child h2 {
-  color: grey;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 10px 0;
+}
+
+main .secondSection > div:last-child > div:last-child > div > div:last-child h2 a {
+  font-size: 14px;
+}
+
+main .secondSection > div:last-child > div:last-child > div > div:last-child h3 {
+  margin: 10px 0;
 }
 
 main .secondSection > div:last-child > div:last-child > div > div:last-child p {
-  color: grey;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .thirdSection {
-  background-color: rgba(114, 165, 247, 0.068);
+  background-color: rgba(206, 217, 255, 0.636);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,32 +770,42 @@ main .thirdSection > div > div p {
   margin-left: 30px;
 }
 
+main .thirdSection > div > div p span {
+  margin-right: 10px;
+}
+
 main .thirdSection > div > div h2 i {
   color: #571919;
   opacity: 0;
 }
 
 #dash::after {
-  content: "Dashboard";
+  content: "PHP";
   font-size: 20px;
   font-weight: bold;
 }
 
 #bakery::after {
-  content: "Bakery Landing";
+  content: "Angular";
   font-size: 20px;
   font-weight: bold;
 }
 
 #login::after {
-  content: "Login Form";
+  content: "Cookies";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#blog::after {
+  content: "MERN";
   font-size: 20px;
   font-weight: bold;
 }
 
 footer {
   width: 100vw;
-  height: 300px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -759,25 +821,32 @@ footer {
           align-items: center;
 }
 
-footer .sns {
+footer div {
   width: 700px;
   text-align: center;
   position: relative;
-  bottom: -200px;
+  bottom: -50px;
   opacity: 0;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
-footer .sns a {
+footer div a {
   margin: 0 10px;
   cursor: pointer;
   color: brown;
 }
 
-footer .sns a i {
+footer div a i {
   font-size: 25px;
 }
 
-footer .sns a i:hover {
+footer div a i:hover {
   color: rgba(165, 42, 42, 0.664);
+}
+
+footer div.ani {
+  bottom: 0;
+  opacity: 1;
 }
 /*# sourceMappingURL=portofolio.css.map */
