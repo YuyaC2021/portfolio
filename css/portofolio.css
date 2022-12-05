@@ -17,7 +17,7 @@ body {
 }
 
 #bgimg_intro {
-  background-image: url("../image/portofolio-back.JPG");
+  background-image: url("../image/portofolio-back.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: none;
@@ -163,37 +163,37 @@ body {
 
 @-webkit-keyframes endless_running_content {
   0% {
-    content: "Hi";
+    content: "HTML";
   }
   25% {
-    content: "You need someone?";
+    content: "CSS/SCSS";
   }
   50% {
-    content: "Lucky for you";
+    content: "JavaScript";
   }
   75% {
-    content: "You found me";
+    content: "React";
   }
   100% {
-    content: "Hi";
+    content: "HTML";
   }
 }
 
 @keyframes endless_running_content {
   0% {
-    content: "Hi";
+    content: "HTML";
   }
   25% {
-    content: "You need someone?";
+    content: "CSS/SCSS";
   }
   50% {
-    content: "Lucky for you";
+    content: "JavaScript";
   }
   75% {
-    content: "You found me";
+    content: "React";
   }
   100% {
-    content: "Hi";
+    content: "HTML";
   }
 }
 

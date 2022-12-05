@@ -2,8 +2,8 @@ let app=angular.module("app",[]);
 app.controller("appctr",function($scope,$timeout){
     let tmpname="";
     let array={
-        name:"Yuya Kawamoto",
-        job:"Web developer"
+        name:"河本　祐哉",
+        job:"プログラマー"
     };
 
     $("#project_model").hide();
