@@ -1,1 +1,232 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portofolio.css">
+    <script src="js/angular.js"></script>
+    <script src="https://kit.fontawesome.com/5554def1de.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <title>ポートフォリオ</title>
+</head>
+
+<body ng-app="app" ng-controller="appctr">
+    <div id="bgimg_intro">
+        <div>
+            <div>
+                <h2>
+                    <span id="sutitling"></span>
+                    <span class="index">|</span>
+                </h2>
+            </div>
+            <div class="animation_move">
+               <p>
+               </p>
+            </div>
+        </div>
+    </div>
+   
+    <header id="biography">
+        <nav id="nav_icon">
+            <div>
+                <img id="nav_icon_img" src="./image/portofolio-back.JPG" alt="Navigation Icon">
+            </div>
+            <div id="nav_icon_drop">
+                <ul>
+                    <li><a href="#BIO">自己紹介</a></li>
+                    <li><a href="#firstSection">スキル</a></li>
+                    <li><a href="#secondSection">プロジェクト</a></li>
+                    <li><a href="#thirdSection">学歴</a></li>
+                    <li style="width: 100%px;height: auto;" id="nav_icon_drop_list_resume"><span style="color: white;">レジュメ</span><br><span style="display: none;" id="popups"><a href="./resume.pdf" target="_blank">ダウンロード</a></span></li>
+                </ul>
+            </div>
+        </nav>
+       
+        <div id="BIO">
+            <h1 class="titles">自己紹介</h1>
+            <div id="bioContents">
+                <div>
+                    <img src="./image/LInkedin.JPEG" alt="Selfie">  
+                </div>
+                <div>
+                    <div class="bio">
+                        <p>
+                            こんにちは初めまして、河本祐哉です。
+                            バンクーバーで英語とウェブデヴェロップメントを学ぶため、
+                            1年4ヶ月間専門学校へ通っていました。
+                            6ヶ月間の勉強期間では主にフロントエンドを勉強していたので、
+                            HTML5, CSS3, Sass, JS, React に自身があります。
+                            PHP, MySQL、Python も少しですが学習しました。
+                            インターンシップ期間では、Goopterという会社で5カ月間インターンシップをしました。
+                        </p>
+                        <button style="cursor: pointer; border-radius: 5px;"><a href="./resume.pdf" target="_blank">職務経歴書</a></button>    
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="firstSection" id="firstSection">
+            <div>
+                <h1 id="firstSectionH1" class="titles">スキル</h1> 
+            </div>
+            <div class="firstContent">
+                <div class="firstSectionElements">
+                    <h2>HTML5</h2>
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="firstSectionElements">
+                    <h2>CSS3</h2>
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="firstSectionElements">
+                    <h2>Sass</h2>
+                    <i class="fab fa-sass"></i>
+                </div>
+                <div class="firstSectionElements">
+                    <h2>Bootstrap</h2>
+                    <i class="fab fa-bootstrap"></i>
+                </div>
+                <div class="firstSectionElements">
+                    <h2>JavaScript</h2>
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="firstSectionElements">
+                    <h2 style="color:red;">PHP</h2>
+                    <i class="fab fa-php"></i>
+                </div>
+                <div class="firstSectionElements">
+                    <h2 style="color:red;">React</h2>
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="firstSectionElements">
+                    <h2 style="color:red;">Node JS</h2>
+                    <i class="fab fa-node-js"></i>                
+                </div>
+            </div>
+        </div>
+        <div class="secondSection" id="secondSection">
+            <div>
+                <h1 id="secondSectionH1" class="titles">プロジェクト</h1>
+            </div>  
+            <div class="secondContent">
+                <div id="model_contents">
+                    <div class="secondSectionElements" id="blog">
+                        <img src="./project/blog1.png" alt="Blog" class="project_img" id="img_blog">
+                    </div>
+                    <div class="secondSectionElements" id="dash">
+                        <img src="./project/dash1.png"  alt="Dashboard" class="project_img" id="img_dash">
+                    </div>
+                    <div class="secondSectionElements" id="bakery">
+                        <img src="./project/bakery1.png" alt="Bakery"  class="project_img" id="img_bakery">
+                    </div>
+                    <div class="secondSectionElements" id="login">
+                        <img src="./project/register.png" alt="Login" class="project_img" id="img_login">
+                    </div>
+                </div>
+                <div  id="project_model" class="close_project">
+                    <span id="hide_model">	&#967;</span>
+                    <div id="projects" class="close_project">
+                        <div id="projects_img" class="close_project">
+                            <img src="./project/dash1.png" alt="Dashboard" class="project_dashboard close_project">
+                            <img src="./project/dash_night.png" alt="Dashboard" class="project_dashboard close_project">
+                            <img src="./project/bakery1.png" alt="Bakery" class="project_bakery close_project">
+                            <img src="./project/bakery2.png" alt="Bakery" class="project_bakery close_project">
+                            <img src="./project/bakery3.png" alt="Bakery" class="project_bakery close_project">
+                            <img src="./project/register.png" alt="Register" class="project_register close_project">
+                            <img src="./project/login.png" alt="Login" class="project_register close_project">
+                            <img src="./project/blog1.png" alt="Blog" class="project_blog close_project">
+                            <img src="./project/blog_myblog.png" alt="Blog" class="project_blog close_project">
+                            <img src="./project/blog_add.png" alt="Blog" class="project_blog close_project">
+                        </div>
+                        <div id="projects_content" class="close_project">
+                            <h2 class="project_dashboard close_project">ダッシュボード</h2>
+                            <h3  class="project_dashboard close_project">★ PHP, MySQL, JQuery, Bootstrap5, Sass, HTML</h3>
+                            <p class="project_dashboard close_project">
+                                <span>・</span>
+                                <span>
+                                    PHP, MySQL, JQuery, Bootstrap5, Sass, HTMLを使った、
+                                    教育機関のためのウェブアプリケーション。
+                                    三つのユーザータイプがある、それぞれ異なった機能が設けられている。
+                        
+                                </span>
+                            </p>
+                            <h2 class="project_bakery close_project">買い物カート</h2>
+                            <h3 class="project_bakery close_project">★AngularJS, JavaScript, PHP, MySQL, Sass, HTML</h3>
+                            <p class="project_bakery close_project">
+                                <span>・</span>
+                                <span>
+                                    HTML, Scss, AngularJS, PHP, MySQLを使った、
+                                    パン屋さんのためのランディングページ。
+                                    注文情報を入力すると、自動的に合計金額を計算する。
+                                </span>
+                            </p>
+                            <h2 class="project_register close_project">ログインとサインインフォーム</h2>
+                            <h3 class="project_register close_project">★ PHP, MySQL, JavaScript, HTML, Sass, Cookie</h3>
+                            <p class="project_register close_project">
+                                <span>・</span>
+                                <span>
+                                    PHP, MySQL, JavaScript, HTML, Sass, Cookieを使った
+                                    安全なログインとサインインフォーム。
+                                    ユーザー情報をクッキーに記載し、よりユーザーフレンドリー。
+                                    ユーザー情報を暗号化し、安全性が高い。
+                                </span>
+                            </p>   
+                            <h2 class="project_blog close_project">
+                                ブログ
+                            </h2>
+                            <h3 class="project_blog close_project">★ MongoDB, Express.js, React.js, Node.js</h3>
+                            <p class="project_blog close_project">
+                                <span>・</span>
+                                <span>
+                                    MongoDB, Express.js, React.js, Node.js　を使ったCRUD アプリケーション。
+                                    ユーザーの情報を暗号化し、安全にログインやサインイン出来る。
+                                    ユーザーは新しい投稿をしたり、すべての投稿を読んだり、更新、削除出来る
+
+                                </span>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thirdSection" id="thirdSection">
+            <div>
+                <h1 id="thirdSectionH1" class="titles">学歴</h1>
+            </div>
+            <div class="thirdContent">
+                <div class="thirdSectionElements">
+                    <h2><i class="fas fa-graduation-cap"></i> <strong>Tamwood Career College</strong></h2>
+                    <p><strong style="font-size: 20px;color: red;">Web Development Coop-Diploma</strong></p>
+                    <p><span><i class="fas fa-map-marker-alt"></i></span>バンクーバー, カナダ</p>
+                    <p><span><i class="fas fa-calendar-alt"></i></span>9月, 2021 -　9月, 2022</p>
+                </div>
+                <div class="thirdSectionElements">
+                    <h2><i class="fas fa-graduation-cap"></i><strong>Tamwood International College</strong></h2>
+                    <p><strong>General English</strong></p>
+                    <p><span><i class="fas fa-map-marker-alt"></i></span>バンクーバー, カナダ</p>
+                    <p><span><i class="fas fa-calendar-alt"></i></span>7月- 8月, 2021</p>
+                </div>
+                <div class="thirdSectionElements">
+                    <h2><i class="fas fa-graduation-cap"></i> <strong>佛教大学</strong></h2>
+                    <p><strong>教育学部教育学科</strong></p>
+                    <p><span><i class="fas fa-map-marker-alt"></i></span>京都, 日本</p>
+                    <p><span><i class="fas fa-calendar-alt"></i></span>4月, 2017 - 3月, 2021</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="sns">
+            <a href="https://www.instagram.com/yuyawebdeveloper/" target="_blank" class="icons"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/portofolio.js"></script>
+</body>
+</html>
