@@ -17,13 +17,16 @@ body {
 }
 
 #bgimg_intro {
-  background-image: url("../image/portofolio-back.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: none;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  height: calc(100vh - 15px);
+}
+
+#bgimg_intro > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 #bgimg_intro > div {
