@@ -42,10 +42,10 @@ body{
 
 
 #bgimg_intro{
-    // @include bgimg($url:"../image/portofolio-back.jpg");
-    // width: 100vw;
-    // height: 100vh;
-    // overflow: hidden;
+    @include bgimg($url:"../image/portofolio-back.jpg");
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     height: calc(100vh - 15px);
     &>img{
         position: absolute;
@@ -204,7 +204,8 @@ header{
                     margin: 30px;
                     @include flexing;
                     &>img{
-                        width: 300px;
+                        width: 100%;
+                        max-width: 300px;
                         box-shadow: 0 0 5px black;
                     }
                 }
